@@ -4,21 +4,24 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/OmkarD15/sample-jenkins-pipeline.git'
+                echo 'Checking out code...'
+                checkout scm
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Building the project...'
+                echo 'Running build...'
+                // Replace this with your actual build commands
+                sh 'echo "Build success!"'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                echo 'Test is done'
+                // Replace with your real test command
+                sh 'echo "Tests passed!"'
             }
         }
     }
