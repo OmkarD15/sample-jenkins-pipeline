@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Running build...'
                 // Replace this with your actual build commands
-                sh 'echo "Build success!"'
+                bat 'echo "Build success!"'
             }
         }
 
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 // Replace with your real test command
-                sh 'echo "Tests passed!"'
+                bay 'echo "Tests passed!"'
             }
         }
     }
