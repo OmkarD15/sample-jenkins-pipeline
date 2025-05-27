@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 // Replace with your real test command
-                bay 'echo "Tests passed!"'
+                bat 'echo "Tests passed!"'
             }
         }
     }
