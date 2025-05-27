@@ -12,7 +12,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build...'
-                // Replace this with your actual build commands
                 bat 'echo "Build success!"'
             }
         }
@@ -20,7 +19,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                // Replace with your real test command
                 bat 'echo "Tests passed!"'
             }
         }
